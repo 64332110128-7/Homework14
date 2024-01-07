@@ -1,0 +1,40 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "todo": "Do something nice for someone I care about",
+      "completed": true,
+      "userId": 26
+    },
+    {
+      "id": 2,
+      "todo": "Memorize the fifty states and their capitals",
+      "completed": true,
+      "userId": 48
+    },
+    {
+      "id": 5,
+      "todo": "Solve a Rubik's cube",
+      "completed": true,
+      "userId": 31
+    },
+    {
+      "todo": "6-1-2567 doing Homework14",
+      "completed": true,
+      "user": 1,
+      "id": 6
+    },
+    {
+      "todo": "how to ???",
+      "completed": false,
+      "user": 1,
+      "id": 9
+    },
+    {
+      "todo": "4:09 : 7/1/2024 deploy test",
+      "completed": false,
+      "user": 1,
+      "id": 10
+    }
+  ]
+}
