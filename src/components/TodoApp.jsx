@@ -8,7 +8,7 @@ function TodoApp() {
   const [data, setData] = useState()
   const [isLoading, setIsLoading] = useState(true)
   const [trigger, setTrigger] = useState(false)
-  const apiUrl = 'http://localhost:8000/todos'
+  const apiUrl = 'https://json-server-beyt.onrender.com/todos'
 
   useEffect( ()=>{
     setIsLoading(true)
@@ -35,7 +35,7 @@ function TodoApp() {
   }
 
   const hdlEdit = (newJob) => {
-    fetch(`http://localhost:8000/todos/${newJob.id}`, {
+    fetch(`https://json-server-beyt.onrender.com/todos/${newJob.id}`, {
       method: 'PATCH',
       headers: {
         "Content-Type": "application/json",
@@ -49,7 +49,7 @@ function TodoApp() {
   }
 
   const hdlCom = (newCom, id) => {
-    fetch(`http://localhost:8000/todos/${id}`, {
+    fetch(`https://json-server-beyt.onrender.com/todos/${id}`, {
       method: 'PATCH',
       headers: {
         "Content-Type": "application/json",
@@ -60,7 +60,7 @@ function TodoApp() {
   }
 
   const hdlDel = (id) => {
-    fetch(`http://localhost:8000/todos/${id}`, {
+    fetch(`https://json-server-beyt.onrender.com/todos/${id}`, {
     method: 'DELETE',
     }).then(res => res.json())
     .then(rs => {
